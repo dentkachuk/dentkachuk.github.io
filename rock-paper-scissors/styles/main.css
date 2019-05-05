@@ -85,6 +85,22 @@ header > h1 {
     margin: 10px;
     transition: .5s;
     cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .15);
+}
+
+.win {
+    border-color: #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.lose {
+    border-color: #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.draw {
+    border-color: #464647;
+    box-shadow: 0 0 10px #25292b;
 }
 
 .choises__item:hover {
