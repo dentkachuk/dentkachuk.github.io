@@ -1,0 +1,33 @@
+$primary: #FE5F55;
+$secondary: #577399;
+$dark: #BDD5EA;
+$light: #F7F7FF;
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	margin: 0;
+	background: linear-gradient(to top left, $primary 50%, $secondary 50%);
+	font-family: "Exo 2", "Helvetica", sans-serif;
+
+	h1 {
+		margin: 0;
+		font-size: 72px;
+		color: $light;
+
+		// span {
+		// 	color: $light;
+		// }
+	}
+
+	canvas {
+		background: $dark;
+		border: 3px solid $light;
+		box-shadow: 4px 4px 12px 4px transparentize($color: $dark, $amount: 0.75);
+	}
+}
