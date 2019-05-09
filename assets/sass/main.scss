@@ -1,0 +1,110 @@
+//color set 1
+/* RGB */
+$color1: rgba(250, 249, 255, 1);
+$color2: rgba(150, 130, 255, 1);
+$color3: rgba(140, 117, 255, 1);
+$color4: rgba(128, 102, 255, 1);
+$color5: rgba(125, 100, 255, 1);
+
+//color set 2
+/* RGB */
+// $color1: rgba(36, 123, 160, 1);
+// $color2: rgba(112, 193, 179, 1);
+// $color3: rgba(178, 219, 191, 1);
+// $color4: rgba(243, 255, 189, 1);
+// $color5: rgba(255, 22, 84, 1);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'IBM Plex Sans', sans-serif;
+	transition: .3s;
+}
+
+body {
+	background: $color1;
+	color: $color3;
+}
+
+a {
+	color: $color5;
+	text-decoration: none;
+	padding: 4px 6px;
+	border-radius: 6px;
+
+	&:hover {
+		color: $color1;
+		background: $color2;
+	}
+}
+
+p + p {
+	margin-top: 10px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	header {
+		padding: 25px;
+		text-align: center;
+	}
+
+	main {
+		flex: 1;
+	}
+
+	footer {
+		background-color: $color2;
+		padding: 15px;
+		text-align: center;
+
+		* {
+			color: $color1;
+		}
+
+		a {
+			&:hover {
+				background-color: $color5;
+			}
+		}
+	}
+}
+
+.soon {
+	text-align: center;
+	margin: 15px auto;
+	font-size: 24px;
+}
+
+.projects-title {
+	text-align: center;
+	margin: 25px auto;
+}
+
+.projects-wrapper {
+	max-width: 1024px;
+	padding: 20px;
+	background-color: $color2;
+	margin: auto;
+	min-height: 300px;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+.project {
+	&__list {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		width: 30%;
+		padding: 20px;
+		border-radius: 15px;
+		background: $color1;
+	}
+}
