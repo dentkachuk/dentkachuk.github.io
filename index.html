@@ -6,21 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Denys Tkachuk</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.min.css">
 </head>
 <body>
-    <h1>Hello</h1>
-    <h2>This is my test project page</h2>
-    <h3>Text and content will be updated soon</h3>
-    <p>Thanks for visiting</p>
+    <div class="wrapper">
+        <header>
+            <h1>Hello! This is learning projects page!</h1>
+        </header>
+        <main>
+            <h3 class="soon">Text and content will be updated soon</h3>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <a href="/rock-paper-scissors/">Rock Paper Scissors</a>
-        </li>
-        <li>
-            <a href="/snake/">Snake</a>
-        </li>
-    </ul>
+            <h2 class="projects-title">Projects</h2>
+            <div class="projects-wrapper">
+                <ul class="project__list">
+                    <li class="project__item">
+                        <a class="project__link" href="/rock-paper-scissors/">Rock Paper Scissors</a>
+                    </li>
+                    <li class="project__item">
+                        <a class="project__link" href="/snake/">Snake</a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>Thanks for visiting</p>
+            <p>Contact me <a href="#">@Denys Tkachuk</a></p>
+        </footer>
+    </div>
 </body>
 </html>
