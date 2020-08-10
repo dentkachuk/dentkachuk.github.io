@@ -100,11 +100,13 @@ p + p {
 		list-style-type: none;
 		display: flex;
 		justify-content: space-between;
+		flex-flow: row wrap;
 	}
 
 	&__item {
 		width: 30%;
 		padding: 20px;
+		margin-bottom: 12px;
 		border-radius: 15px;
 		background: $color1;
 	}
